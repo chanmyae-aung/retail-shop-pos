@@ -6,11 +6,13 @@ export default function Sidebar({ children }) {
   return (
     <AppShell
       padding="md"
+      //drawer sidebar here
       navbar={
         <Navbar width={{ base: 300 }} height={1000} p="xs" bg={"#161618"}>
           {<SidebarItems />}
         </Navbar>
       }
+      // navbar header here
       header={
         <Header
           style={{
@@ -24,6 +26,7 @@ export default function Sidebar({ children }) {
         </Header>
       }
     >
+      {/* children components here*/}
       {children}
     </AppShell>
   );

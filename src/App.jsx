@@ -1,11 +1,11 @@
-import React from 'react'
-import "./index.css"
-import Dashboard from './Pages/Dashboard'
+import React from "react";
+import "./index.css";
+import Path from "./routes/Path";
 
 export default function App() {
   return (
-    <>
-    <Dashboard/>
-    </>
-  )
+    <div>
+      <Path />
+    </div>
+  );
 }

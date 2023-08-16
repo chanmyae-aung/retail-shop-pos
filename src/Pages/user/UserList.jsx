@@ -2,6 +2,7 @@ import React from 'react'
 import { Table } from '@mantine/core';
 import {BsArrowRight, BsDash} from 'react-icons/bs'
 import {MdOutlineEdit} from 'react-icons/md'
+import Sidebar from '../../Components/Sidebar/Sidebar';
 
 export default function UserList() {
   const elements = [
@@ -26,6 +27,7 @@ export default function UserList() {
   ));
 
   return (
+    <Sidebar>
     <main className='border'>
       <Table verticalSpacing={"md"}>
       <thead>
@@ -40,5 +42,6 @@ export default function UserList() {
       <tbody>{rows}</tbody>
     </Table>
     </main>
+    </Sidebar>
   );
 }

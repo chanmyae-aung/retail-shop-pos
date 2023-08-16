@@ -4,11 +4,13 @@ import { TbMailOpenedFilled } from "react-icons/tb";
 import { FaPhoneVolume } from "react-icons/fa";
 import { BiSolidUser } from "react-icons/bi";
 import { NavLink } from "react-router-dom";
+import Sidebar from "../../Components/Sidebar/Sidebar";
 
 export default function UserDetail() {
   const editImage = document.querySelector(".file");
   return (
-    <main className={`flex items-center h-screen`}>
+   <Sidebar>
+         <main className={`flex items-center h-screen`}>
       <section className={`w-[70%] h-[70%] p-1 bg-blue-50 border`}>
         <div className={`w-full relative p-8`}>
           <div
@@ -85,5 +87,6 @@ export default function UserDetail() {
         </div>
       </section>
     </main>
+   </Sidebar>
   );
 }

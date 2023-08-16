@@ -6,6 +6,12 @@
 * {
   font-family: "Inter", sans-serif;
 }
+.bg-darker{
+  background-color: #161618;
+}
+.bg-dark{
+  color: #3F4245;
+}
 body {
   @apply text-slate-700;
 }

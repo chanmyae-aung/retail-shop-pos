@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Button from "../../Components/Button";
 import {BiChevronDown} from 'react-icons/bi'
+import Sidebar from "../../Components/Sidebar/Sidebar";
 
 export default function CreateUser() {
   const [select, setSelect] = useState(false)
@@ -9,6 +10,7 @@ export default function CreateUser() {
     setSelect(!select)
   }
   return (
+    <Sidebar>
     <main>
       <form action="" className={`flex p-10 gap-10`}>
         {/* Personal Info */}
@@ -128,5 +130,6 @@ export default function CreateUser() {
         </section>
       </form>
     </main>
+    </Sidebar>
   );
 }

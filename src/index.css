@@ -6,8 +6,17 @@
 * {
   font-family: "Inter", sans-serif;
 }
+
+input {
+  @apply bg-[#202124]
+}
+
 body {
-  @apply text-slate-700;
+  @apply text-[#E8EAED];
+}
+
+.text-primary{
+  @apply text-[#E8EAED]
 }
 
 h2 {

@@ -3,6 +3,9 @@ import Button from "../../Components/Button";
 import { BiChevronDown } from "react-icons/bi";
 import { MdOutlineEdit } from "react-icons/md";
 import Sidebar from "../../Components/Sidebar/Sidebar";
+import { Typography } from "@mui/material";
+import { Breadcrumbs } from "@mantine/core";
+import { Link } from "react-router-dom";
 
 export default function CreateUser() {
   const editImage = document.querySelector(".file");
@@ -24,8 +27,39 @@ export default function CreateUser() {
     setSelect(!select);
   };
   return (
-    <Sidebar>
-    <main>
+    <>
+    {/* path breadcrumbs */}
+    <div className="flex justify-between">
+      <div>
+      <Typography variant="h4" gutterBottom>
+        User
+      </Typography>
+      <Breadcrumbs  aria-label="breadcrumb" style={{
+       
+      }}>
+        <Link href='user-overview'  underline="hover"  color="#f5f5f5" >
+          User Overview
+        </Link>
+        
+        <Link
+          underline="always"
+          color="#f5f5f5"
+          href="#"
+        >
+          Create User
+        </Link>
+      </Breadcrumbs>
+      </div>
+      <div
+      className="w-fit px-6 py-2 flex items-center gap-2 rounded  text-sm font-semibold"
+    >
+      <button className='bg-blue-500 text-white w-fit px-6 py-2 flex items-center gap-2 rounded  text-sm font-semibold'>Create</button>
+      
+    </div>
+    </div>
+    {/* path breadcrumbs */}
+
+    <main className="mt-7">
       <form action="" className={`flex p-10 gap-10`}>
         {/* Personal Info */}
         <section className={`${state.stepOne ? "flex" : "hidden"} flex-col gap-5 w-[70%]`}>
@@ -219,5 +253,6 @@ export default function CreateUser() {
         </section>
       </form>
     </main>
+    </>
   );
 }

@@ -1,8 +1,9 @@
 import React from 'react'
-import { Table } from '@mantine/core';
+import { Breadcrumbs, Table } from '@mantine/core';
 import {BsArrowRight, BsDash} from 'react-icons/bs'
 import {MdOutlineEdit} from 'react-icons/md'
 import Sidebar from '../../Components/Sidebar/Sidebar';
+import { Link, Typography } from '@mui/material';
 
 export default function UserList() {
   const elements = [
@@ -27,8 +28,38 @@ export default function UserList() {
   ));
 
   return (
-    <Sidebar>
-    <main className='border'>
+    <>
+    {/* path breadcrumbs */}
+    <div className="flex justify-between">
+      <div>
+      <Typography variant="h4" gutterBottom>
+        User
+      </Typography>
+      <Breadcrumbs  aria-label="breadcrumb" style={{
+       
+      }}>
+        <Link href='user-overview'  underline="hover"  color="#f5f5f5" >
+          User Overview
+        </Link>
+        
+        <Link
+          underline="always"
+          color="#f5f5f5"
+          href="#"
+        >
+          Create User
+        </Link>
+      </Breadcrumbs>
+      </div>
+      <div
+      className="w-fit px-6 py-2 flex items-center gap-2 rounded  text-sm font-semibold"
+    >
+      <button className='bg-blue-500 text-white w-fit px-6 py-2 flex items-center gap-2 rounded  text-sm font-semibold'>Create</button>
+      
+    </div>
+    </div>
+    {/* path breadcrumbs */}
+    <main className='border mt-7'>
       <Table verticalSpacing={"md"}>
       <thead>
         <tr>
@@ -42,6 +73,6 @@ export default function UserList() {
       <tbody>{rows}</tbody>
     </Table>
     </main>
-    </Sidebar>
+    </>
   );
 }

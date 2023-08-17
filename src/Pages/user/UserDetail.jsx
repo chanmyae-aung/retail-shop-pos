@@ -11,7 +11,6 @@ import { Breadcrumbs,Typography,Link } from "@mui/material";
 export default function UserDetail() {
   const editImage = document.querySelector(".file");
   return (
-   <Sidebar>
          <main className={`flex items-center h-screen`}>
       <section className={`w-[70%] h-[70%] p-1 border`}>
         <div className={`w-full relative p-8`}>

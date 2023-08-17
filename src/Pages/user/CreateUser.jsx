@@ -24,7 +24,6 @@ export default function CreateUser() {
     setSelect(!select);
   };
   return (
-    <Sidebar>
     <main>
       <form action="" className={`flex p-10 gap-10`}>
         {/* Personal Info */}

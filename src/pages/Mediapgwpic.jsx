@@ -4,6 +4,7 @@ import { AiOutlineCloudUpload, AiOutlineOrderedList } from "react-icons/ai";
 import { FcCancel } from "react-icons/fc";
 import { BsImages, BsFillGridFill } from "react-icons/bs";
 import React from "react";
+import Sidebar from "../Components/Sidebar";
 const images = [
   {
     id: 1,
@@ -33,7 +34,10 @@ const images = [
 
 const Mediapgwpic = (props) => {
   return (
-    <div>
+    <div className=" flex ">
+        <div>
+            <Sidebar/>
+        </div>
       <div className=" p-10">
         <p className=" text-2xl text-white font-bold tracking-wide ">Media</p>
         <p className="  pt-1 text-gray-300">Media/Uploader</p>

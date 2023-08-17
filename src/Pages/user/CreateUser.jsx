@@ -4,7 +4,6 @@ import { BiChevronDown } from "react-icons/bi";
 import { MdOutlineEdit } from "react-icons/md";
 import Sidebar from "../../Components/Sidebar/Sidebar";
 
-
 export default function CreateUser() {
   const editImage = document.querySelector(".file");
   const [state, setState] = useState({
@@ -25,6 +24,7 @@ export default function CreateUser() {
     setSelect(!select);
   };
   return (
+    <Sidebar>
     <main>
       <form action="" className={`flex p-10 gap-10`}>
         {/* Personal Info */}

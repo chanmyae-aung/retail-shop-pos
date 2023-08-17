@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Button from "../../Components/Button";
 import { BiChevronDown } from "react-icons/bi";
 import { MdOutlineEdit } from "react-icons/md";
-import {BiChevronDown} from 'react-icons/bi'
 import Sidebar from "../../Components/Sidebar/Sidebar";
 
 
@@ -26,7 +25,6 @@ export default function CreateUser() {
     setSelect(!select);
   };
   return (
-    <Sidebar>
     <main>
       <form action="" className={`flex p-10 gap-10`}>
         {/* Personal Info */}
@@ -79,7 +77,7 @@ export default function CreateUser() {
             <textarea
               rows={3}
               placeholder="Enter your address"
-              className={`w-[70%] outline-none border rounded px-5 py-2`}
+              className={`w-[70%] bg-[#202124] outline-none border rounded px-5 py-2`}
               type="phone"
               name=""
               id=""
@@ -94,7 +92,7 @@ export default function CreateUser() {
             </label>
             <div
               onClick={toggleSelect}
-              className="w-[70%] border outline-none py-2.5 bg-white relative rounded cursor-pointer"
+              className="w-[70%] border outline-none py-2.5 relative rounded cursor-pointer"
             >
               <div className="px-5 flex items-center justify-between">
                 <p className="">{display}</p>
@@ -113,7 +111,7 @@ export default function CreateUser() {
                   onClick={(e) => {
                     setDisplay(e.target.textContent);
                   }}
-                  className="w-full outline-none py-3 bg-white px-5 rounded-t border-b cursor-pointer"
+                  className="w-full outline-none py-3 bg-[#202124] px-5 rounded-t border-b cursor-pointer"
                 >
                   Admin
                 </div>
@@ -121,7 +119,7 @@ export default function CreateUser() {
                   onClick={(e) => {
                     setDisplay(e.target.textContent);
                   }}
-                  className="w-full outline-none py-3 bg-white px-5 rounded-b cursor-pointer"
+                  className="w-full outline-none py-3 bg-[#202124] px-5 rounded-b cursor-pointer"
                 >
                   Staff
                 </div>
@@ -221,6 +219,5 @@ export default function CreateUser() {
         </section>
       </form>
     </main>
-    </Sidebar>
   );
 }

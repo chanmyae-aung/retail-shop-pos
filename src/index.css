@@ -7,6 +7,10 @@
   font-family: "Inter", sans-serif;
 }
 
+input {
+  @apply bg-[#202124]
+}
+
 body {
   @apply text-[#E8EAED];
 }

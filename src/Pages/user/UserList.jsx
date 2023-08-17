@@ -27,9 +27,8 @@ export default function UserList() {
   ));
 
   return (
-    <Sidebar>
       <main className="border">
-        <Table verticalSpacing={"md"}>
+        <Table sx={{color: "#E8EAED"}} verticalSpacing={"md"}>
           <thead>
             <tr>
               <th>No.</th>
@@ -42,6 +41,5 @@ export default function UserList() {
           <tbody>{rows}</tbody>
         </Table>
       </main>
-    </Sidebar>
   );
 }

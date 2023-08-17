@@ -3,16 +3,14 @@ import { Table } from '@mantine/core';
 import {BsArrowRight, BsDash} from 'react-icons/bs'
 import {MdOutlineEdit} from 'react-icons/md'
 import Sidebar from '../../Components/Sidebar/Sidebar';
-import { Breadcrumbs,Typography,Link } from "@mui/material";
-
 
 export default function UserList() {
   const elements = [
-    { id:1, name: "MMS", position: "Admin", email: "mms@gmial.com",},
-    { id:2, name: "MMS", position: "Admin", email: "mms@gmial.com",},
-    { id:3, name: "MMS", position: "Admin", email: "mms@gmial.com", },
-    { id:4, name: "MMS", position: "Admin", email: "mms@gmial.com", },
-    { id:5, name: "MMS", position: "Admin", email: "mms@gmial.com", },
+    { id: 1, name: "MMS", position: "Admin", email: "mms@gmial.com" },
+    { id: 2, name: "MMS", position: "Admin", email: "mms@gmial.com" },
+    { id: 3, name: "MMS", position: "Admin", email: "mms@gmial.com" },
+    { id: 4, name: "MMS", position: "Admin", email: "mms@gmial.com" },
+    { id: 5, name: "MMS", position: "Admin", email: "mms@gmial.com" },
   ];
   const rows = elements.map((element) => (
     <tr key={element.id}>
@@ -20,28 +18,16 @@ export default function UserList() {
       <td>{element.name}</td>
       <td>{element.position}</td>
       <td>{element.email}</td>
-      <td className="flex gap-5" >
-        <BsDash  className="text-3xl bg-gray-50 text-gray-500 rounded-full hover:bg-gray-500 hover:text-gray-50 p-1.5 cursor-pointer transition-all duration-200 ease-in" />
-        <MdOutlineEdit className="text-3xl bg-gray-50 text-gray-500 rounded-full hover:bg-gray-500 hover:text-gray-50 p-1.5 cursor-pointer transition-all duration-200 ease-in" />
-        <BsArrowRight className="text-3xl bg-gray-50 text-gray-500 rounded-full hover:bg-gray-500 hover:text-gray-50 p-1.5 cursor-pointer transition-all duration-200 ease-in" />
+      <td className="flex gap-5">
+        <BsDash className="text-3xl hover:bg-gray-50 hover:text-gray-500 rounded-full bg-gray-500 text-gray-50 p-1.5 cursor-pointer transition-all duration-200 ease-in" />
+        <MdOutlineEdit className="text-3xl hover:bg-gray-50 hover:text-gray-500 rounded-full bg-gray-500 text-gray-50 p-1.5 cursor-pointer transition-all duration-200 ease-in" />
+        <BsArrowRight className="text-3xl hover:bg-gray-50 hover:text-gray-500 rounded-full bg-gray-500 text-gray-50 p-1.5 cursor-pointer transition-all duration-200 ease-in" />
       </td>
     </tr>
   ));
 
   return (
     <Sidebar>
-      <Typography variant="h4" gutterBottom>
-        User
-      </Typography>
-      <Breadcrumbs aria-label="breadcrumb" style={{
-       
-      }}>
-        <Link href='user-overview'  underline="always"  color="inherit" >
-          User Overview
-        </Link>
-        
-        
-      </Breadcrumbs>
     <main className='border'>
       <Table verticalSpacing={"md"}>
       <thead>

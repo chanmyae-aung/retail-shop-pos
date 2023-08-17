@@ -12,20 +12,8 @@ export default function UserDetail() {
   const editImage = document.querySelector(".file");
   return (
    <Sidebar>
-      <Typography variant="h4" gutterBottom>
-        User
-      </Typography>
-      <Breadcrumbs aria-label="breadcrumb" style={{
-       
-      }}>
-        <Link href='user-overview'  underline="hover" color="inherit" >
-          User Overview
-        </Link>
-        
-        <Link underline="always" color="inherit">User Detail</Link>
-      </Breadcrumbs>
          <main className={`flex items-center h-screen`}>
-      <section className={`w-[70%] h-[70%] p-1 bg-blue-50 border`}>
+      <section className={`w-[70%] h-[70%] p-1 border`}>
         <div className={`w-full relative p-8`}>
           <div
             className={`w-40 h-40 absolute -top-16 rounded-full border p-1 flex justify-center items-center`}
@@ -101,6 +89,5 @@ export default function UserDetail() {
         </div>
       </section>
     </main>
-   </Sidebar>
   );
 }

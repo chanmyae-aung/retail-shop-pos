@@ -1,12 +1,7 @@
-import React from 'react'
-import Sidebar from '../Components/Sidebar/Sidebar'
+import React from "react";
 
 const Dashboard = () => {
-  return (
-    <Sidebar>
-      <h1>Dashboard</h1>
-    </Sidebar>
-  )
-}
+  return <h1>dash</h1>;
+};
 
-export default Dashboard
+export default Dashboard;

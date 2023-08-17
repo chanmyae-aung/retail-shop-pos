@@ -10,7 +10,7 @@ import { NavLink } from "react-router-dom";
 const SidebarItems = () => {
   return (
     <>
-      <a className=" px-5  text-[#f5f5f5] text-[1.3rem]  pt-2 pb-3" href="#">
+      <a className=" px-5  text-[#f5f5f5] text-[1rem]  pt-2 pb-3" href="#">
         <NavLink to={"/"} >
         <span className="inline-flex gap-3 my-0 py-0">
           <i>
@@ -28,7 +28,7 @@ const SidebarItems = () => {
           },
 
           control: {
-            fontSize: "1.3rem",
+            fontSize: "1rem",
             color: "#f5f5f5",
             ":hover": {
               backgroundColor: "transparent",
@@ -54,7 +54,7 @@ const SidebarItems = () => {
             </span>
           </Accordion.Control>
           <Accordion.Panel>
-            <ul className=" px-2 py-0 border-s-2 border-[#3f4245] text-[1.1rem] ">
+            <ul className=" px-2 py-0 border-s-2 border-[#3f4245] text-[1rem] ">
               <li className="pt-1 pb-2 hover:text-blue-400 cursor-pointer text-[#f5f5f5]  px-2">
                 <a href="#">Cashier</a>
               </li>
@@ -113,7 +113,7 @@ const SidebarItems = () => {
         </Accordion.Item>
       </Accordion>
 
-      <a className="px-5  text-[#f5f5f5] text-[1.3rem]  py-3" href="#">
+      <a className="px-5  text-[#f5f5f5] text-[1rem]  py-3" href="#">
         <span className="inline-flex gap-3 my-0 py-0">
           <i>
             <TfiGallery className="mt-1" />
@@ -129,7 +129,7 @@ const SidebarItems = () => {
           },
 
           control: {
-            fontSize: "1.3rem",
+            fontSize: "1rem",
             color: "#f5f5f5",
             ":hover": {
               backgroundColor: "transparent",
@@ -155,7 +155,7 @@ const SidebarItems = () => {
             </span>
           </Accordion.Control>
           <Accordion.Panel>
-            <ul className=" px-2 py-0 border-s-2 border-[#3f4245] text-[1.1rem] ">
+            <ul className=" px-2 py-0 border-s-2 border-[#3f4245] text-[1rem] ">
               <li className="pt-1 pb-2 hover:text-blue-400 cursor-pointer text-[#f5f5f5]  px-2 ">
                 <a className="" href="#">
                   My account
@@ -168,7 +168,7 @@ const SidebarItems = () => {
           </Accordion.Panel>
         </Accordion.Item>
       </Accordion>
-      <a className="px-5 text-[#f5f5f5] text-[1.3rem] py-3" href="#">
+      <a className="px-5 text-[#f5f5f5] text-[1rem] py-3" href="#">
         <span className="inline-flex gap-3 my-0 py-0">
           <i>
             <HiOutlineLogout className="mt-1" />

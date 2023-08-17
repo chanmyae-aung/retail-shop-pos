@@ -1,8 +1,8 @@
-import React from "react";
-import { Table } from "@mantine/core";
-import { BsArrowRight, BsDash } from "react-icons/bs";
-import { MdOutlineEdit } from "react-icons/md";
-import Sidebar from "../../Components/Sidebar/Sidebar";
+import React from 'react'
+import { Table } from '@mantine/core';
+import {BsArrowRight, BsDash} from 'react-icons/bs'
+import {MdOutlineEdit} from 'react-icons/md'
+import Breadcrumb from '../../Components/Breadcrumb';
 
 export default function UserList() {
   const elements = [
@@ -27,19 +27,27 @@ export default function UserList() {
   ));
 
   return (
-      <main className="border">
-        <Table sx={{color: "#E8EAED"}} verticalSpacing={"md"}>
-          <thead>
-            <tr>
-              <th>No.</th>
-              <th>Name</th>
-              <th>Position</th>
-              <th>Email</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>{rows}</tbody>
-        </Table>
-      </main>
+    
+    <>
+    {/* path breadcrumbs */}
+    <div>
+      <Breadcrumb icon={true} btnText={"Create"} title={"User"} firstRoute={"User"} secondRoute={"Overview"}/>
+    </div>
+    {/* path breadcrumbs */}
+    <main className='border mt-7'>
+      <Table verticalSpacing={"md"} sx={{color: "#F5F5F5"}}>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Email</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>{rows}</tbody>
+    </Table>
+    </main>
+    </>
   );
 }

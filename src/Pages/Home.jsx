@@ -8,7 +8,7 @@ export default function Home() {
       <div className='w-[20%] text-white'>
         <Sidebar/>
       </div>
-        <div className='w-[80%] mt-32'>
+        <div className='w-[80%] mt-20 px-12 '>
         <Outlet/>
         </div>
     </div>

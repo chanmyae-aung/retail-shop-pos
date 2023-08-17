@@ -4,12 +4,19 @@ import { TbMailOpenedFilled } from "react-icons/tb";
 import { FaPhoneVolume } from "react-icons/fa";
 import { BiSolidUser } from "react-icons/bi";
 import { NavLink } from "react-router-dom";
-import Sidebar from "../../Components/Sidebar/Sidebar";
+import Breadcrumb from "../../Components/Breadcrumb";
+
 
 export default function UserDetail() {
   const editImage = document.querySelector(".file");
   return (
-         <main className={`flex items-center h-screen`}>
+    <>
+    {/* path breadcrumbs */}
+    <div>
+    <Breadcrumb icon={true} btnText={"Create"} title={"User"} firstRoute={"User"} secondRoute={"Overview"}/>
+    </div>
+    {/* path breadcrumbs */}
+    <main className={`flex items-center h-screen`}>
       <section className={`w-[70%] h-[70%] p-1 border`}>
         <div className={`w-full relative p-8`}>
           <div
@@ -86,5 +93,6 @@ export default function UserDetail() {
         </div>
       </section>
     </main>
+    </>
   );
 }

@@ -11,7 +11,38 @@ import { Breadcrumbs,Typography,Link } from "@mui/material";
 export default function UserDetail() {
   const editImage = document.querySelector(".file");
   return (
-         <main className={`flex items-center h-screen`}>
+    <>
+    {/* path breadcrumbs */}
+    <div className="flex justify-between">
+      <div>
+      <Typography variant="h4" gutterBottom>
+        User
+      </Typography>
+      <Breadcrumbs  aria-label="breadcrumb" style={{
+       
+      }}>
+        <Link href='user-overview'  underline="hover"  color="#f5f5f5" >
+          User Overview
+        </Link>
+        
+        <Link
+          underline="always"
+          color="#f5f5f5"
+          href="#"
+        >
+          Create User
+        </Link>
+      </Breadcrumbs>
+      </div>
+      <div
+      className="w-fit px-6 py-2 flex items-center gap-2 rounded  text-sm font-semibold"
+    >
+      <button className='bg-blue-500 text-white w-fit px-6 py-2 flex items-center gap-2 rounded  text-sm font-semibold'>Create</button>
+      
+    </div>
+    </div>
+    {/* path breadcrumbs */}
+    <main className={`flex items-center h-screen`}>
       <section className={`w-[70%] h-[70%] p-1 border`}>
         <div className={`w-full relative p-8`}>
           <div
@@ -88,5 +119,6 @@ export default function UserDetail() {
         </div>
       </section>
     </main>
+    </>
   );
 }

@@ -12,11 +12,11 @@ input {
 }
 
 body {
-  @apply text-[#E8EAED];
+  @apply text-[#f5f5f5];
 }
 
 .text-primary{
-  @apply text-[#E8EAED]
+  @apply text-[#f5f5f5]
 }
 
 h2 {

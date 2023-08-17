@@ -4,8 +4,7 @@ import { TbMailOpenedFilled } from "react-icons/tb";
 import { FaPhoneVolume } from "react-icons/fa";
 import { BiSolidUser } from "react-icons/bi";
 import { NavLink } from "react-router-dom";
-import Sidebar from "../../Components/Sidebar/Sidebar";
-import { Breadcrumbs,Typography,Link } from "@mui/material";
+import Breadcrumb from "../../Components/Breadcrumb";
 
 
 export default function UserDetail() {
@@ -13,33 +12,8 @@ export default function UserDetail() {
   return (
     <>
     {/* path breadcrumbs */}
-    <div className="flex justify-between">
-      <div>
-      <Typography variant="h4" gutterBottom>
-        User
-      </Typography>
-      <Breadcrumbs  aria-label="breadcrumb" style={{
-       
-      }}>
-        <Link href='user-overview'  underline="hover"  color="#f5f5f5" >
-          User Overview
-        </Link>
-        
-        <Link
-          underline="always"
-          color="#f5f5f5"
-          href="#"
-        >
-          Create User
-        </Link>
-      </Breadcrumbs>
-      </div>
-      <div
-      className="w-fit px-6 py-2 flex items-center gap-2 rounded  text-sm font-semibold"
-    >
-      <button className='bg-blue-500 text-white w-fit px-6 py-2 flex items-center gap-2 rounded  text-sm font-semibold'>Create</button>
-      
-    </div>
+    <div>
+    <Breadcrumb icon={true} btnText={"Create"} title={"User"} firstRoute={"User"} secondRoute={"Overview"}/>
     </div>
     {/* path breadcrumbs */}
     <main className={`flex items-center h-screen`}>

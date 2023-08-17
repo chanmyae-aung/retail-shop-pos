@@ -18,18 +18,18 @@ export default function UserList() {
       <td>{element.position}</td>
       <td>{element.email}</td>
       <td className="flex gap-5" >
-        <BsDash  className="text-3xl bg-gray-50 text-gray-500 rounded-full hover:bg-gray-500 hover:text-gray-50 p-1.5 cursor-pointer transition-all duration-200 ease-in" />
-        <MdOutlineEdit className="text-3xl bg-gray-50 text-gray-500 rounded-full hover:bg-gray-500 hover:text-gray-50 p-1.5 cursor-pointer transition-all duration-200 ease-in" />
-        <BsArrowRight className="text-3xl bg-gray-50 text-gray-500 rounded-full hover:bg-gray-500 hover:text-gray-50 p-1.5 cursor-pointer transition-all duration-200 ease-in" />
+        <BsDash  className="text-3xl hover:bg-gray-50 hover:text-gray-500 rounded-full bg-gray-500 text-gray-50 p-1.5 cursor-pointer transition-all duration-200 ease-in" />
+        <MdOutlineEdit className="text-3xl hover:bg-gray-50 hover:text-gray-500 rounded-full bg-gray-500 text-gray-50 p-1.5 cursor-pointer transition-all duration-200 ease-in" />
+        <BsArrowRight className="text-3xl hover:bg-gray-50 hover:text-gray-500 rounded-full bg-gray-500 text-gray-50 p-1.5 cursor-pointer transition-all duration-200 ease-in" />
       </td>
     </tr>
   ));
 
   return (
-    <main className='border'>
-      <Table verticalSpacing={"md"}>
-      <thead>
-        <tr>
+    <main className='border '>
+      <Table sx={{color: "#E8EAED"}} verticalSpacing={"md"}>
+      <thead >
+        <tr >
           <th>No.</th>
           <th>Name</th>
           <th>Position</th>

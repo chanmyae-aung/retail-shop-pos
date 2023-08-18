@@ -10,15 +10,15 @@ import Breadcrumb from "../../Components/Breadcrumb";
 export default function UserDetail() {
   const editImage = document.querySelector(".file");
   return (
-    <>
+    <div className={``}>
     {/* path breadcrumbs */}
     <div>
     <Breadcrumb icon={true} btnText={"Create"} title={"User"} firstRoute={"User"} secondRoute={"Overview"}/>
     </div>
     {/* path breadcrumbs */}
-    <main className={`flex items-center h-screen`}>
-      <section className={`w-[70%] h-[70%] p-1 border`}>
-        <div className={`w-full relative p-8`}>
+    <main className={`flex items-center mt-24`}>
+      <section className={`w-[70%] h-[70%] p-1`}>
+        <div className={`w-full relative p-8 bg-[#171717]`}>
           <div
             className={`w-40 h-40 absolute -top-16 rounded-full border p-1 flex justify-center items-center`}
           >
@@ -29,9 +29,9 @@ export default function UserDetail() {
             />
             <div
               onClick={() => editImage.click()}
-              className={`flex justify-center cursor-pointer absolute bg-white right-3  bottom-1 items-center text-xs gap-1 border-2 rounded-full w-8 h-8 px-1 py-0.5`}
+              className={`flex justify-center cursor-pointer absolute bg-[#f5f5f5] right-3  bottom-1 items-center text-xs gap-1 border-2 rounded-full w-8 h-8 px-1 py-0.5`}
             >
-              <MdOutlineEdit />
+              <MdOutlineEdit className="text-slate-700"/>
               <input className="file hidden" type="file" name="" id="" />
             </div>
           </div>
@@ -47,7 +47,7 @@ export default function UserDetail() {
           </div>
         </div>
         <div>
-          <div className={`flex items-center gap-10 px-8 border-b pb-5`}>
+          <div className={`flex items-center bg-[#161618] gap-10 px-8 border-b py-5`}>
             <NavLink>
               <div className="flex items-center gap-2">
                 <BiSolidUser />
@@ -68,7 +68,7 @@ export default function UserDetail() {
               </div>
             </NavLink>
           </div>
-          <div className="mx-10 mt-5 flex flex-col gap-5">
+          <div className="px-10 py-5 flex flex-col gap-5 bg-[#1a1a1a]">
               <div className="flex">
                 <p className="w-[30%]">Phone</p>
                 <p className="w-[70%]">: 0987654321</p>
@@ -93,6 +93,6 @@ export default function UserDetail() {
         </div>
       </section>
     </main>
-    </>
+    </div>
   );
 }

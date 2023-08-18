@@ -1,7 +1,10 @@
 import React from "react";
+import ConfirmBox from "../Components/ConfirmBox";
 
 const Dashboard = () => {
-  return <h1>dash</h1>;
+  return <div>
+    Dashboard
+  </div>
 };
 
 export default Dashboard;

@@ -1,12 +1,14 @@
-import React from 'react'
-import Mediapgwpic from './pages/Mediapgwpic'
-import Sidebar from './Components/Sidebar'
+
+import React from "react";
+import "./index.css";
+import Path from "./routes/Path";
+import Dashboard from "./Pages/Dashboard";
 
 export default function App() {
   return (
-    <div className='  bg-bg'>
-      <Sidebar/>
- 
+    <div>
+      <Path />
     </div>
-  )
+  );
+
 }

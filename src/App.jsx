@@ -1,3 +1,4 @@
+
 import React from "react";
 import "./index.css";
 import Path from "./routes/Path";
@@ -9,4 +10,5 @@ export default function App() {
       <Path />
     </div>
   );
+
 }
